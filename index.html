@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> JJ Corporation | sábado </title> <!-- título do texto -->
+    <title> evy fofa | sábado </title> <!-- título do texto -->
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
   <body>
 
-    <header><!-- cabeçalho -->
-        <nav> <!-- navegação -->
-            <ul>
-                <li>Home</li>
-                <li>Projetos</li>
-                <li>Sobre</li>
-                <li>Contato</li>
+    <header class="header"> <!-- cabeçalho -->
+        <nav class="header-nav"> <!-- navegação -->
+            <ul class="menu menu-principal">
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Projetos</li>
+                <li class="menu-item">Sobre</li>
+                <li class="menu-item">Contato</li>
             </ul>
         </nav>
 
-        <div> <!-- divisórias -->
-            <a href="index.html">
-                    <img src="img/logo.png" alt="">
+        <div class="header-brand"> <!-- divisórias -->
+            <a href="#home">
+                    <img src="/logo.png" alt="" class="brand-logo">
             </a>
         </div>
 
-        <div>
-            <i></i><!-- Icone/modo Dark e Light -->
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+            <!-- Icone/modo Dark e Light -->
         </div>
-    </header>
+    </header> <!-- FIM cabeçalho -->
 
     <!-- Menu Mobile -->
     <nav>
@@ -41,19 +42,19 @@
                 </a>
             </li>
             <li>
-                <a href="projetos">
+                <a href="#projetos">
                     <i></i>
                     <span>Projetos</span> 
                 </a> 
             </li>
             <li>
-                <a href="sobre">
+                <a href="#sobre">
                     <i></i>
                     <span>Sobre</span>
                 </a>
             </li>
             <li>
-                <a href="Contato">
+                <a href="#Contato">
                     <i></i>
                     <span>Contato</span>
                 </a>

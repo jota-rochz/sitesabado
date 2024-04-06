@@ -50,8 +50,88 @@ html[data-theme='light'] .brand-logo {
 
  body {
     background: var(--primary-bg-color); /* plano de fundo */
-    font-family: 'inter' , 'Tahoma' , 'Geneva' , 'sans-serif'; /* estilo de fonte que vai usar */
+    font-family: 'inter' , Tahoma, Geneva, sans-serif; /* estilo de fonte que vai usar */
     color: var(--text-color); /* cor do texto */
-
-
  }
+
+a {
+    text-decoration: none; /* none = nenhum */
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+i {
+    color: var(--icon-color); 
+}
+
+b {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5rem; /* tamanho pra fonte */
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+h3 {
+    font-size: 1.55rem;
+    text-align: left;
+}
+
+h4 {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1,15rem;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+}
+
+p {
+    text-align: justify;
+}
+
+p, span, li {
+    font-size: 1rem;
+}
+
+.header {
+    display: flex; /* forma de como os projetos são posicionados */
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* comprimento */
+    padding: 0.5rem 1rem; /* primeiro valor pra cima e para baixo, segundo valor pra esquerda e direita, tudo isso em sentido horário*/
+    z-index: 2; /* sobreposição */
+}
+
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-brand .brand-logo {
+    width: 3.25rem;/* comprimento */
+    height: 3.25rem; /* altura */
+}
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
