@@ -40,7 +40,7 @@ html[data-theme='light'] .brand-logo {
  */
 
  *{
-    margin: 0; /* margem */
+    margin: 0px; /* margem */
     padding: 0; /* espaçamento */
     vertical-align: baseline; /* alinhamento vertical */
     list-style: none;
