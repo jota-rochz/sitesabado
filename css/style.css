@@ -54,6 +54,19 @@ html[data-theme='light'] .brand-logo {
     color: var(--text-color); /* cor do texto */
  }
 
+ ::-webkit-scrollbar{
+    width: 0.5rem;
+ }
+
+ ::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background: var(--secundary-bg-color);
+    border-radius: 50rem;
+ }
+
 a {
     text-decoration: none; /* none = nenhum */
     color: var(--text-color);
@@ -155,8 +168,10 @@ p, span, li {
     gap: .5rem;
 }
 
-.menu-link.active,
-.menu-link:hover {
+.menu-link.active .menu-icon, 
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
     color: var(--primary-color);
 }
 
@@ -165,3 +180,83 @@ p, span, li {
     text-transform: uppercase;
 }
 
+.menu-mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-bonder-color);
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.menu-icon, .menu-text {
+    color: var(--text-color);
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+.menu-social {
+    gap: 1rem;
+}
+
+.header-nav {
+    display: none;
+}
+
+/* --------------FIM CSS MENU------------- */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    background: transparent;
+    border-radius: 3.125rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+
+.btn span, .btn i {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn-primary span {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    border: 1px solid var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
