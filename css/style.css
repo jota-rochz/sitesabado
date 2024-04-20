@@ -222,6 +222,7 @@ p, span, li {
     padding: 0.875rem 1.5rem;
     background: transparent;
     border-radius: 3.125rem;
+    border: none;
     transition: ease-in-out .3s;
     cursor: pointer;
     color: var(--primary-color);
@@ -270,7 +271,7 @@ main {
     align-items: center;
     gap: 1.25rem;
     padding: 6.25rem 1rem 2rem;
-    margin: -5.5rem;
+    margin-top: -5.5rem;
     background: var(--secundary-bg-color);
 }
 
@@ -337,3 +338,46 @@ main {
     align-items: flex-start;
     gap: 1rem;
 }
+
+.card-descricao {
+    color: var(--title-color);
+}
+
+.card-list {
+    margin-left: 1.25rem;
+}
+
+.card-item {
+    list-style: disc;
+}
+
+.card-button, .descricao-button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+
+.card-button .btn span {
+    font-size: 1rem;
+}
+
+.card-body .tecnologias-item {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card-body .tecnologias-logo {
+    height: 2rem;
+}
+
+.projestos .btn {
+    width: auto;
+    margin: auto;
+}
+
+/* fim de projeto */
+
