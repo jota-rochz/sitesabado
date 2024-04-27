@@ -433,7 +433,7 @@ main {
 .sobre-content2 .col1 .row2 {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap:.5rem;
 }
 
 .accordion-header {
@@ -605,5 +605,13 @@ footer p {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 4rem;
+    }
+
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+
+    .descricao-button {
+        justify-content: flex-start;
     }
 }
