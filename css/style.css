@@ -183,7 +183,7 @@ p, span, li {
 
 .menu-mobile {
     width: 100vw;
-    /*position: fixed;*/
+    position: fixed;
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid var(--primary-bonder-color);
@@ -487,3 +487,83 @@ main {
     transform: rotate(180deg);
 }
 
+/* Contatp */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--primary-bonder-color);
+    border-bottom: 1px solid var(--primary-bonder-color);
+}
+
+.contato p {
+    text-align: center;
+}
+
+.contato .btn {
+    width: auto;
+}
+
+.contato .email {
+    text-transform: lowercase;
+}
+
+/* footer */
+
+footer {
+    margin-bottom: 5rem;
+}
+
+footer p {
+    font-size: .875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsividade 768px */
+@media (min-width: 768px){ /* largura de tela igual ou maior */
+    .header {
+     position: fixed;
+     border-bottom: 1px solid var(--primary-bonder-color);
+     padding: 1rem 6rem;
+     background: var(--primary-bg-color);
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+    }
+
+    .header-nav
+    .header-toggle {
+        min-width: 30%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    main, .projeto, .sobre {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+
+    .contato {
+        padding: 6rem;
+    }
+
+    .contato p {
+        width: 80%;
+    }
+
+    
+} 
