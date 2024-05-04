@@ -421,7 +421,7 @@ main {
     font-size: 1.25rem;
 }
 
-.sobre-content1 .col1,
+.sobre-content2 .col1,
 .sobre-content2 .col2 {
     display: flex;
     flex-direction: column;
@@ -648,5 +648,47 @@ footer p {
         gap: 1rem;
     }
 
-    
+    .tecnologias-item {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .tecnologias-logo {
+        height: 3rem;
+    }
+
+    p, span, li {
+        font-size: 1.15rem;
+    }
+
+    .card-button .btn,
+    .descricao-button .btn {
+        width: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 6.25rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.25rem;
+    }
+
+    .header {
+        padding: 1rem 15rem;
+    }
+
+    #home {
+        padding: 12rem 15rem 2rem;
+    }
+
+    .tecnologias, .projestos, .sobre {
+        padding: 10rem 15rem 4rem;
+    } 
 }
