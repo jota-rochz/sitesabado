@@ -40,7 +40,7 @@ html[data-theme='light'] .brand-logo {
  */
 
  *{
-    margin: 0px; /* margem */
+    margin: 0 ; /* margem */
     padding: 0; /* espaçamento */
     vertical-align: baseline; /* alinhamento vertical */
     box-sizing: border-box;
@@ -244,6 +244,10 @@ p, span, li {
 
 .btn-primary {
     border: 1px solid var(--primary-color);
+}
+
+#home, .projetos, .sobre, .contato {
+    padding: 2.5rem 1rem;
 }
 
 main {
@@ -487,7 +491,7 @@ main {
     transform: rotate(180deg);
 }
 
-/* Contatp */
+/* Contato */
 
 .contato {
     display: flex;
@@ -641,7 +645,7 @@ footer p {
 
     .tecnologias h2 {
         font-size: 3rem;
-        width: 55%;
+        width: 50%;
     }
 
     .tecnologias-lista {
@@ -688,7 +692,7 @@ footer p {
         padding: 12rem 15rem 2rem;
     }
 
-    .tecnologias, .projestos, .sobre {
+    .tecnologias, .projetos, .sobre {
         padding: 10rem 15rem 4rem;
     } 
 }
