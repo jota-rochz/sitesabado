@@ -1,30 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
 
-/* definir o tema Dark do site */
-:root, :root[data-theme='dark'] {
-    /* definir cores padrão em variável */
+:root,
+:root[data-theme='dark'] {
+    /* Definir cores padrão em variáveis */
+    --primary-color: #f0f0f0;  /* cor textos */
+    --primary-bg-color: #131313;  /* BG = Background */
+    --secondary-bg-color: #28292E;
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
 
-    --primary-color: #f0f0f0; /* cor texto */
-    --primary-bg-color: #111217; /* BG = Background */
-    --secundary-bg-color:#28292E;
-    --primary-bonder-color: #28292e;
-    --secundary-bonder-color: #56575a;
-
-    /* definir cores padrão para os TEXTOS em variável */
+    /* Definir cores padrão para os textos em variáveis */
     --title-color: #F0F0F0;
-    --text-color: #9a9a9a;
-    --link-color: #9a9a9a;
-    --icon-color: #c7c8c9;
+    --text-color: #9a9a9c;
+    --link-color: #9a9a9c;
+    --icon-color: #C7C8C9;
 }
-/* definir tema Light do site */
-:root[data-theme='light']{
 
+:root[data-theme='light'] {
     --primary-color: #0b0b0f;
-    --primary-bg-color: #9e9e9e;
-    --secundary-bg-color: #C7c8c9; 
-    --primary-bonder-color: #C7c8c9;
-    --secundary-bonder-color: #9a9a9c;
-
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #C7c8c9;
+    --primary-border-color:  #e7e7e7;
+    --secondary-border-color: #9a9a9c;
     --title-color: #0b0b0f;
     --text-color: #28292E;
     --link-color: #28292E;
@@ -33,6 +30,9 @@
 
 html[data-theme='light'] .brand-logo {
     filter: invert(1);
+}
+html[data-theme='light'] .tecnologias-logo {
+    filter: invert(80%);
 }
 
 /*  Reset CSS
@@ -276,7 +276,7 @@ main {
     gap: 1.25rem;
     padding: 6.25rem 1rem 2rem;
     margin-top: -5.5rem;
-    background: var(--secundary-bg-color);
+    background: var(--primary-border-color);
 }
 
 .tecnologias h2 {
@@ -299,7 +299,7 @@ main {
     align-items: center;
     width: 4.8rem;
     height: 4.8rem;
-    border: 1px solid var(--secundary-bonder-color);
+    border: 1px solid var(--secondary-border-color);
     border-radius: 5rem;
 } 
 
@@ -446,7 +446,7 @@ main {
     padding: 0.75rem 1rem; /*1*/
     justify-content: space-between;
     align-items: center;
-    border: 1px solid var(--primary-bonder-color);
+    border: 1px solid var(--primary-border-color);
     background: transparent;
     text-align: left;
     cursor: pointer;
