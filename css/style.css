@@ -458,16 +458,16 @@ main {
 }
 
 .accordion-header.start {
-    border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 
 .accordion-header.end,
 .accordion-item.active .accordion-body.end {
-    border-radius: 0rem 0rem 1rem 1rem;
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
 }
 
 .accordion-item.active .accordion-header.end {
-    border-radius: 0rem;
+    border-radius: 0;
 }
 
 .accordion-body {
@@ -487,7 +487,7 @@ main {
     display: flex;
 }
 
-.accordion-item .bi-caret-down-fill {
+.accordion-item.active .bi-caret-down-fill {
     transform: rotate(180deg);
 }
 
